@@ -18,8 +18,8 @@
 
 /* Body */
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: #1a1a1a; /* Dark background */
+  color: #f4f4f4; /* Light text color for visibility */
   line-height: 1.6;
 }
 
@@ -37,7 +37,8 @@ header h1 {
 }
 
 header nav {
-  margin-top: 1rem;
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 header nav a {
@@ -52,21 +53,90 @@ header nav a:hover {
   color: var(--primary-color);
 }
 
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('path/to/your/dark-wallpaper.jpg') no-repeat center center/cover;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Section Styling */
 section {
   padding: 2.5rem;
   max-width: 800px;
   margin: auto;
-  background-color: white;
+  background-color: #2a2a2a; /* Darker section background */
+  color: #f4f4f4; /* Light text color for visibility */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  display: none;
+}
+
+/* Show section when active */
+section.active {
+  display: block;
+}
+
+/* About Section */
+#about {
+  padding: 2.5rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a; /* Darker section background */
+  color: #f4f4f4; /* Light text color for visibility */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
 
+/* Skills Section */
+#skills {
+  padding: 2.5rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a; /* Darker section background */
+  color: #f4f4f4; /* Light text color for visibility */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  padding: 0.5rem 0;
+  color: #f4f4f4; /* Light text color for visibility */
+}
+
 h2 {
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: #f4f4f4; /* Light text color for visibility */
   margin-bottom: 1rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 2.5rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a; /* Darker section background */
+  color: #f4f4f4; /* Light text color for visibility */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }
 
 /* Project Cards */
@@ -93,17 +163,6 @@ h2 {
   color: var(--light-text-color);
 }
 
-/* Skills Section */
-#skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-#skills li {
-  padding: 0.5rem 0;
-  color: var(--light-text-color);
-}
-
 /* Contact */
 #contact p, #contact a {
   color: var(--secondary-color);
@@ -118,6 +177,51 @@ h2 {
 
 #contact a:hover {
   color: var(--accent-color);
+}
+
+/* Contact Section */
+#contact {
+  padding: 2.5rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #2a2a2a; /* Darker section background */
+  color: #f4f4f4; /* Light text color for visibility */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 0.5rem;
+  color: #f4f4f4; /* Light text color for visibility */
+}
+
+#contact input, #contact textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #333; /* Dark input background */
+  color: #f4f4f4; /* Light text color for visibility */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: var(--accent-color);
 }
 
 /* Footer */

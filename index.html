@@ -4,10 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hari's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <h1>Hariharan Narlakanti</h1>
+<body class="dark-theme">
+  <header>
+    <nav><a href="#home">Home</a></nav>
+    <nav><a href="#about">About</a></nav>
+    <nav><a href="#skills">Skills</a></nav>
+    <nav><a href="#projects">Projects</a></nav>
+    <nav><a href="#contact">Contact</a></nav>
+  </header>
   
+  <section id="home" class="active" style="background: url('adaptive-wallpaper.jpg') no-repeat center center; background-size: cover;">
+    <h1>Hi, I am Hariharan</h1>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Hariharan Narlakanti, studying in CSE_AIML 3rd 2nd sem.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>VoiceVibes</h3>
+      <p>Detects emotion based on audio.</p>
+    </div>
+    <div class="project">
+      <h3>Railway Train Arrival Time Detection</h3>
+      <p>Detects the arrival time of trains.</p>
+    </div>
+  </section>
   
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hariharan Narlakanti. All rights reserved.</p>
+  </footer>
 </body>
 </html>
